@@ -37,12 +37,16 @@ $armyofdarkness->setLength(81);
                 <h1><?php echo $armyofdarkness->title; ?></h1>
                 <i>Directed and written by</i>
                 <h4><?php echo $armyofdarkness->director; ?></h4>
-                <i>Running time:</i> <b><?php echo $armyofdarkness->getLengthMinutes(); ?> minutes</b>
-                <p>"<?php echo $armyofdarkness->plot; ?>"</p>
+                <blockquote class="blockquote">
+                    <p>"<?php echo $armyofdarkness->plot; ?>"</p>
+                </blockquote>
                 <i>Starring:</i>
-                <h4><?php echo $armyofdarkness->actor; ?></h3>
+                <h4><?php echo $armyofdarkness->actor; ?></h4>
+                <div class="text-wrap">
+                    <i>Running time:</i> <b><?php echo $armyofdarkness->getLengthMinutes(); ?> minutes</b>
                     <i>Release date:</i> <b><?php echo $armyofdarkness->date; ?></b>
                     <i>Country:</i> <b><?php echo $armyofdarkness->country; ?></b>
+                </div>
             </div>
         </div>
     </div>
