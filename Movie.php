@@ -6,14 +6,20 @@ class Movie
   public $director;
   public $plot;
   public $poster;
+  public $actor;
+  public $date;
+  public $country;
   private $length = 0;
 
-  public function __construct($title, $director, $plot, $poster)
+  public function __construct($title, $director, $plot, $poster, $actor, $date, $country,)
   {
     $this->title = $title;
     $this->director = $director;
     $this->plot = $plot;
     $this->poster = $poster;
+    $this->actor = $actor;
+    $this->date = $date;
+    $this->country = $country;
   }
 
   public function setLength($seconds)
