@@ -11,7 +11,7 @@ $armyofdarkness = new Movie(
     "October 9 1992",
     "United States",
 );
-$armyofdarkness->setLength(8640);
+$armyofdarkness->setLength(81);
 ?>
 
 <!DOCTYPE html>
@@ -21,20 +21,31 @@ $armyofdarkness->setLength(8640);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>PHP OOP</title>
 </head>
 
 <body>
-    <img src="<?php echo $armyofdarkness->poster; ?>" alt="Movie Poster">
-    <h1><?php echo $armyofdarkness->title; ?></h1>
-    <i>Directed and written by</i>
-    <h2><?php echo $armyofdarkness->director; ?></h2>
-    <i>Running time:</i> <b><?php echo $armyofdarkness->getLengthMinutes(); ?></b>
-    <p>"<?php echo $armyofdarkness->plot; ?>"</p>
-    <i>Starring:</i>
-    <h3><?php echo $armyofdarkness->actor; ?></h3>
-    <i>Release date:</i> <b><?php echo $armyofdarkness->date; ?></b>
-    <i>Country:</i> <b><?php echo $armyofdarkness->country; ?></b>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-dark rounded-3 text-center">
+                <img src="<?php echo $armyofdarkness->poster; ?>" alt="Movie Poster" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+                <h1><?php echo $armyofdarkness->title; ?></h1>
+                <i>Directed and written by</i>
+                <h4><?php echo $armyofdarkness->director; ?></h4>
+                <i>Running time:</i> <b><?php echo $armyofdarkness->getLengthMinutes(); ?> minutes</b>
+                <p>"<?php echo $armyofdarkness->plot; ?>"</p>
+                <i>Starring:</i>
+                <h4><?php echo $armyofdarkness->actor; ?></h3>
+                    <i>Release date:</i> <b><?php echo $armyofdarkness->date; ?></b>
+                    <i>Country:</i> <b><?php echo $armyofdarkness->country; ?></b>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
