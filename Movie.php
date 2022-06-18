@@ -11,7 +11,7 @@ class Movie
   public $country;
   private $length = 0;
 
-  public function __construct($title, $director, $plot, $poster, $actor, $date, $country,)
+  public function __construct($title, $director, $plot, $poster, $actor, $date, $country)
   {
     $this->title = $title;
     $this->director = $director;

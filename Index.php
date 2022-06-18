@@ -9,9 +9,11 @@ $armyofdarkness = new Movie(
     "https://upload.wikimedia.org/wikipedia/en/4/46/Army_of_Darkness_poster.jpg",
     "Bruce Campbell",
     "October 9 1992",
-    "United States",
+    "United States"
 );
+
 $armyofdarkness->setLength(81);
+
 ?>
 
 <!DOCTYPE html>
